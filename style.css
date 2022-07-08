@@ -1,0 +1,222 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    background-color: firebrick;
+}
+
+body{
+    background-color: #FF7F50;
+}
+
+html{
+    /*Para ficar com animação suavi, ao cricar no link*/
+    scroll-behavior: smooth;
+}
+
+#h1-header{
+    color: aliceblue;
+    font-size: arial;
+    /*Padding (espaçamento) Left(Esquerda)*/
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 1px;
+}
+.h3-header{
+    color: aliceblue;
+    font-size: arial;
+    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 1px;
+}
+
+.link-cabeçalho{
+    /*Decoratio (é para a decoração padrão) / None (para nada)*/
+    text-decoration: none;
+    color: aliceblue;
+    /*Word-spacinf(Esdpaço entre palavras)*/
+    word-spacing: 8px;
+    font-size: 19px;
+    font-family: arial;
+    /*espessura da fonte*/
+    /*bold==(negrito)*/
+    font-weight: bold;
+    font-family: Arial;
+}
+
+/*hever( Permite criação de diversos efeitos interessantes)*/
+.link-cabeçalho:hover{
+    color: aqua;
+    /*Quando passa o trasita(passa o malse)
+    ele  mudara para a cor escolhida em 
+    3ms(tres milesegundo)*/
+    transition: all ease-in-out 3ms;
+}
+
+
+#navegação{
+    /*Right (Direurta)*/
+    text-align: right;
+    padding-right: 8px;
+}
+
+
+                                        /*>>>>>>>>>>SECTIONS<<<<<<<<<*/
+
+.section-1{
+    background-color: firebrick;
+    /*Para alinha o estring(section)*/
+    margin: 0 auto;
+    text-align: center;
+    /*Width (largura)*/
+    width: 90%;
+    /*Altura*/
+    height: 280px;
+    border-radius:20px ;
+    color: aliceblue;
+}
+
+.h2-section{
+    font-family:Arial;
+}
+.p1{
+    padding-top: 15px;
+}
+.p2{
+    padding-top: 15px;
+}
+
+#section-grid{
+    padding: 10px;
+    height: 10%;
+    padding-bottom: 20px;
+}
+
+.section-2{
+    background-color: firebrick;
+    height: 180px;
+    width: 90%;
+    /*Sempre usar para sentariza a Sectionj no site*/
+    margin: 0 auto;
+    /*Para a altura maxima*/
+    max-width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.grid{
+    background-color: none;
+    /*GRID(grade) O conteudo se comporta como grade */
+    display: grid;
+    height: 100%;
+    /*Trabalha com as grade em forma de colunas*/ /*1fr(Para a DIV não sar da SCTION e deixa feio)*/
+    /*repeat(auto-fill)==(repetir(preenchimento-automático))*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /*Espaço entre cada grid(grade/coluna) */
+    grid-column-gap: 20px;
+    /*Tamanho maximo de altura*/
+    max-width: 100%;
+    /*Para sentariza a gride dentro da DIV e do site*/
+    margin: 0 auto;
+    /*Espaçamento geral */
+    padding: 5px;
+}
+
+.sub-grid{
+    margin: 0 auto;
+    padding: 10%;
+    background-color: aliceblue;
+}
+/*>>>>>>>>>>>>>>IMAGEM<<<<<<<<<<<<<<<<<*/
+.img-pizza{
+    max-width: 100%;
+}
+
+.h2-cardapio{
+    font-family: Arial;
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.h2-sub-grind{
+    font-family: Arial;
+    font-size: 22px;
+    color: maroon;
+    background-color: #FF7F50;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+.p-preços{
+    font-family: Arial;
+    font-size: 22px;
+    color: maroon;
+    background-color: #FF7F50;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /*espessura da fonte (Estilo, negrito ou  italico)*/
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.botao-acao{
+    width: 90%;
+    background-color: darkgreen;
+    font-size: 25px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#rodapé{
+    background-color: maroon;
+    width: 50%;
+    height: 180px;
+    max-width: 100%;
+    margin:0 auto;
+    border-radius: 30px;
+
+}
+
+#h2-rodapé{
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.p1-footer{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: arial;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+/*Icone do Whatsapp*/
+.botao-whatsapp{
+    /*Posição ficsa. qundo mexer o site a imagem ira continuar*/
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 25px;
+    background-color: green;
+    /**/
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    /*Para frutuar sobre os outros componentes*/
+    z-index: 1000;
+    /*È a sobra sobre o componente*/
+    box-shadow: 1px 2px 5px green;
+}
+
+.fa-whatsapp{
+    color: aliceblue;
+}
